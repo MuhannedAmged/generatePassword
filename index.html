@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h3>Generate Password</h3>
+        </div>
+        <div class="error">
+            Please select at least one option.
+        </div>
+        <div class="inputs">
+            <input type="text" readonly class="password">
+            <button class="copy">Copy</button>
+        </div>
+        <div class="dit">
+            <input class="range" type="range" value="8" min="8" max="30">
+            <label class="range-num">8</label>
+        </div>
+        <div class="options">
+            <div class="opt">
+                <input type="checkbox" id="uppercase" checked>
+                <label for="uppercase">Uppercase Letters</label>
+                <br>
+                <input type="checkbox" id="lowercase" checked>
+                <label for="lowercase">Lowercase Letters</label>
+                <br>
+                <input type="checkbox" id="numbers" checked>
+                <label for="numbers">Numbers</label>
+                <br>
+                <input type="checkbox" id="symbols" checked>
+                <label for="symbols">Symbols</label>
+            </div>
+            <div class="gen">
+                <button class="generate">Generate</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
